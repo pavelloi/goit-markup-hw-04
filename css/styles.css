@@ -114,6 +114,13 @@ body {
   align-items: center;
 }
 
+.link-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-title-text);
+}
+
 .nav-item-link {
   display: block;
   padding-top: 32px;
@@ -124,6 +131,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-title-text);
   text-decoration: none;
+}
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--accent-color);
 }
 
 .nav-item-link:focus,
