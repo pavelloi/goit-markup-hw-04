@@ -115,10 +115,8 @@ body {
 }
 
 .link-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
-  fill: var(--primary-title-text);
+  fill: currentColor;
 }
 
 .nav-item-link {
@@ -132,16 +130,13 @@ body {
   color: var(--primary-title-text);
   text-decoration: none;
 }
-.link-icon:hover,
-.link-icon:focus {
-  fill: var(--accent-color);
-}
 
 .nav-item-link:focus,
 .nav-item-link:hover,
 .contact-item-link:hover,
 .contact-item-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-item-link {
@@ -154,6 +149,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 /* hero */
@@ -161,6 +158,22 @@ body {
   background-color: var(--background-color);
   padding: 200px 0;
   text-align: center;
+}
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -203,6 +216,16 @@ body {
 .advantages-list {
   margin-left: -30px;
   display: flex;
+}
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-items {
