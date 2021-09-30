@@ -8,6 +8,7 @@
   --second-background-color: #f5f4fa;
   --first-border-color: #ececec;
   --second-border-color: #eeeeee;
+  --icons-color: #afb1b8;
 }
 
 p,
@@ -86,7 +87,9 @@ body {
 .nav-item-link.current {
   color: var(--accent-color);
 }
-
+.footer-soc-list,
+.clients,
+.soc-list,
 .nav-items,
 .contact-items,
 .advantages-list,
@@ -318,6 +321,75 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
+.soc-list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.soc-list-item {
+  margin-right: 10px;
+}
+.soc-list-item:last-child {
+  margin-right: 0;
+}
+.soc-link {
+  display: flex;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icons-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-link:focus,
+.soc-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--secondary-title-text);
+}
+
+.lcon-svg {
+  fill: currentColor;
+}
+/* clients */
+
+.clients {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.client {
+  display: flex;
+  margin-right: 30px;
+}
+
+.client:last-child {
+  margin-right: 0;
+}
+
+.company {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  fill: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.company:hover,
+.company:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
 /* contact us */
 .footer {
   background-color: var(--background-color);
@@ -368,6 +440,54 @@ body {
 .mail-link:focus,
 .mail-link:hover {
   color: var(--accent-color);
+}
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+.contact-block {
+  margin-right: 70px;
+}
+.footer-soc {
+  align-items: baseline;
+  text-align: left;
+}
+.footer-strong {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-text);
+}
+.footer-soc-list {
+  padding: 0;
+  display: flex;
+}
+.footer-soc-block {
+  margin-right: 10px;
+  justify-content: center;
+}
+.footer-soc-block:last-child {
+  margin-right: 0;
+}
+.footer-link {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-svg {
+  fill: var(--secondary-title-text);
 }
 
 /* portfolio main */
