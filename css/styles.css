@@ -272,7 +272,7 @@ body {
 }
 
 .work-item {
-  flex-basis: (100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 
@@ -294,7 +294,7 @@ body {
 
 .team-cards {
   margin-left: 30px;
-  flex-basis: (100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - 30px);
   background: var(--secondary-title-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -544,6 +544,7 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
+
 .portfolio-card {
   margin-left: 30px;
   margin-top: 30px;
@@ -551,11 +552,19 @@ body {
   background: var(--secondary-title-text);
 }
 
-.portfolio-card:focus,
-.portfolio-card:hover {
+.portfolio-link {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+}
+.portfolio-img {
+  display: block;
 }
 
 .flex-elements {
